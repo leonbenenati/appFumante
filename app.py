@@ -54,7 +54,7 @@ if pagina == 'Análise rapida':
 
 	
 	dados = pd.DataFrame(dados_dicio)
-	st.write(dados)
+	#st.write(dados)
 
 	if st.button('CLIQUE AQUI PARA DESCOBRIR SE A PESSOA FUMA'):
 		with open('modelo_escolhido', 'rb') as f:  
