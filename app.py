@@ -90,7 +90,7 @@ if pagina == 'Análise com arquivo':
 		variaveis = ["Sexo", "Fumante","Regiao"]
 		df1 = pd.get_dummies(df1, columns = variaveis, drop_first = True)
 		df1['Custos'] = df1['Custos']/10000
-		X = df1.drop('Fumante_yes', axis = 1)
+		X = df1[['Idade','IMC',"Filhos","Custos","Sexo_male","Regiao_northwest","Regiao_southeast","Regiao_southwest"]]
 		with open('modelo_escolhido', 'rb') as f:  
 			model = pickle.load(f)
 			pred = model.predict(X)
