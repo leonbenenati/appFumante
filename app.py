@@ -26,7 +26,7 @@ if pagina == 'Análise rapida':
 	else:
 		sexo = 0
 	imc = st.number_input('Entre com o IMC')
-	filhos = st.selectbox("Selecione a quantidade de filhos", [0, 1, 2, 3])
+	filhos = st.selectbox("Selecione a quantidade de filhos(se for mais de 4 filhos selecione 3)", [0, 1, 2, 3])
 	custos = st.number_input('Entre custos de seguro:')/10000
 	regiao = st.selectbox("Região da pessoa", ['northwest', 'northeast','southeast','southwest'])
 	
